@@ -67,10 +67,6 @@ def invertBinary(binary_string):
         ''.join('1' if bit == '0' else '0' for bit in part)
         for part in binary_string.split('.')
     )
-    
-def getNetworkBinary(ip,cidr):
-    """ converts the ip to binary and cidr mask to binary, then apply Bitwise AND """
-    return binaryAND(ipToBinary(ip), cidrToBinaryMask(cidr))
 # =================================================================================
 
 

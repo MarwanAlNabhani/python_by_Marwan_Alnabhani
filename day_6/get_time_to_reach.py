@@ -7,7 +7,7 @@ load_dotenv()
 
 API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 
-if not API_KEY:
+if not API_KEY: 
     print("Error: API key not found in .env file")
     sys.exit(1)
 

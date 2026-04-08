@@ -50,5 +50,5 @@ if __name__ == "__main__":
     json_dict = load_json(json_file)
     yaml_dict = load_yaml(yaml_file)
     xml_dict = load_xml(xml_file)
-    
+        
     compare_reports(json_dict, yaml_dict, xml_dict)

@@ -1,0 +1,12 @@
+--- Network Device Audit Report ---
+
+Device: 192.168.1.1
+  - Telnet Status: Connection failed
+  - HTTP Server Status: Connection failed
+  - SNMP Status: Connection failed
+
+Device: 192.168.1.2
+  - Telnet Status: Connection failed
+  - HTTP Server Status: Connection failed
+  - SNMP Status: Connection failed
+

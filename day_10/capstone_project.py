@@ -2,10 +2,6 @@ import nmap
 from netmiko import ConnectHandler
 from datetime import datetime
 
-# ==============================
-# CONFIGURATION
-# ==============================
-
 devices = [
     {"ip": "192.168.1.1", "device_type": "cisco_ios"},
     {"ip": "192.168.1.2", "device_type": "cisco_ios"},
@@ -14,9 +10,6 @@ devices = [
 USERNAME = "admin"
 PASSWORD = "admin123"
 
-# ==============================
-# NMAP SCAN FUNCTION
-# ==============================
 
 def scan_device(ip):
     scanner = nmap.PortScanner()
@@ -43,9 +36,6 @@ def scan_device(ip):
 
     return result
 
-# ==============================
-# NETMIKO AUDIT FUNCTION
-# ==============================
 
 def audit_device(ip, device_type):
     result = {
@@ -104,10 +94,6 @@ def audit_device(ip, device_type):
 
     return result
 
-# ==============================
-# MAIN FUNCTION
-# ==============================
-
 def main():
     results = []
 
@@ -145,10 +131,6 @@ def main():
             file.write(f"  - SNMP Status: {r['snmp_status']}\n\n")
 
     print(f"\n[+] Audit report saved to {filename}")
-
-# ==============================
-# RUN SCRIPT
-# ==============================
 
 if __name__ == "__main__":
     main()
